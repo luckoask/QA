@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>150+ Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #fff;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 3em;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .question {
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            animation: slideIn 1s ease-in-out;
+        }
+        .feedback-button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #ff4b5c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .feedback-button:hover {
+            background-color: #ff1c3c;
+        }
+        .feedback-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            color: #000;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .feedback-popup h2 {
+            margin-top: 0;
+        }
+        .feedback-popup textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        .feedback-popup button {
+            padding: 10px;
+            background-color: #ff4b5c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .feedback-popup button:hover {
+            background-color: #ff1c3c;
+        }
+        .feedback-popup .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 1.5em;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>150+ Questions</h1>
+    <div class="questions">
+        <div class="question">What is your favorite color?</div>
+        <div class="question">Where were you born?</div>
+        <div class="question">How many siblings do you have?</div>
+        <div class="question">What is your favorite movie?</div>
+        <div class="question">Do you speak any other languages?</div>
+        <div class="question">What is your dream job?</div>
+        <div class="question">Are you a morning person or a night owl?</div>
+        <div class="question">Do you prefer tea or coffee?</div>
+        <div class="question">What is your biggest fear?</div>
+        <div class="question">If you could travel anywhere in the world, where would you go?</div>
+        <div class="question">What is your favorite book?</div>
+        <div class="question">What is your favorite season?</div>
+        <div class="question">Do you play any musical instruments?</div>
+        <div class="question">What is your favorite food?</div>
+        <div class="question">Are you an introvert or an extrovert?</div>
+        <div class="question">What is your proudest accomplishment?</div>
+        <div class="question">Do you have any pets?</div>
+        <div class="question">What is your favorite TV show?</div>
+        <div class="question">What is your zodiac sign?</div>
+        <div class="question">What is your favorite sport to watch?</div>
+        <div class="question">What is your favorite holiday?</div>
+        <div class="question">What is your favorite dessert?</div>
+        <div class="question">Do you prefer cats or dogs?</div>
+        <div class="question">What is your favorite outdoor activity?</div>
+        <div class="question">What is your favorite indoor activity?</div>
+        <div class="question">What was the last movie you watched?</div>
+        <div class="question">Do you like to cook?</div>
+        <div class="question">What is your favorite restaurant?</div>
+        <div class="question">What is your dream vacation?</div>
+        <div class="question">Do you enjoy exercising?</div>
+        <div class="question">What is your favorite board game?</div>
+        <div class="question">What is your favorite ice cream flavor?</div>
+        <div class="question">Do you like going to concerts?</div>
+        <div class="question">What is your favorite song?</div>
+        <div class="question">What is your favorite genre of music?</div>
+        <div class="question">Do you collect anything?</div>
+        <div class="question">What is your favorite type of art?</div>
+        <div class="question">What is your go-to karaoke song?</div>
+        <div class="question">What is your favorite app?</div>
+        <div class="question">Do you enjoy gardening?</div>
+        <div class="question">What is your favorite quote?</div>
+        <div class="question">Do you believe in aliens?</div>
+        <div class="question">What is your favorite TV sitcom?</div>
+        <div class="question">Do you enjoy hiking?</div>
+        <div class="question">What is your favorite childhood memory?</div>
+        <div class="question">Do you like roller coasters?</div>
+        <div class="question">What is your favorite holiday tradition?</div>
+        <div class="question">Do you like spicy food?</div>
+        <div class="question">What is your favorite subject in school?</div>
+        <div class="question">What is your favorite candy?</div>
+        <div class="question">Do you believe in ghosts?</div>
+        <div class="question">What is your favorite book genre?</div>
+        <div class="question">Do you enjoy volunteering?</div>
+        <div class="question">What is your favorite flower?</div>
+        <div class="question">Do you like going to the beach?</div>
+        <div class="question">What is your favorite clothing brand?</div>
+        <div class="question">Do you enjoy shopping?</div>
+        <div class="question">What is your favorite Disney movie?</div>
+        <div class="question">Do you believe in love at first sight?</div>
+        <div class="question">What is your favorite type of weather?</div>
+        <div class="question">Do you like driving?</div>
+        <div class="question">What is your favorite video game?</div>
+        <div class="question">Do you enjoy museums?</div>
+        <div class="question">What is your favorite animal?</div>
+        <div class="question">Do you prefer baths or showers?</div>
+        <div class="question">What is your favorite TV drama?</div>
+        <div class="question">Do you like attending parties?</div>
+        <div class="question">What is your favorite piece of furniture?</div>
+        <div class="question">Do you enjoy DIY projects?</div>
+        <div class="question">What is your favorite comic book?</div>
+        <div class="question">Do you like spicy food?</div>
+        <div class="question">What is your favorite pizza topping?</div>
+        <div class="question">Do you enjoy skiing or snowboarding?</div>
+        <div class="question">What is your favorite museum?</div>
+        <div class="question">Do you believe in karma?</div>
+        <div class="question">What is your favorite piece of jewelry?</div>
+        <div class="question">Do you like attending weddings?</div>
+        <div class="question">What is your favorite type of shoe?</div>
+        <div class="question">Do you like going to the zoo?</div>
+        <div class="question">What is your favorite childhood toy?</div>
+        <div class="question">Do you enjoy cooking for others?</div>
+        <div class="question">What is your favorite camping activity?</div>
+        <div class="question">Do you believe in fate?</div>
+        <div class="question">What is your favorite TV game show?</div>
+        <div class="question">Do you like puzzles?</div>
+        <div class="question">What is your favorite type of cheese?</div>
+        <div class="question">Do you enjoy writing?</div>
+        <div class="question">What is your favorite type of cookie?</div>
+        <div class="question">Do you like going to the theater?</div>
+        <div class="question">What is your favorite household chore?</div>
+        <div class="question">Do you believe in horoscopes?</div>
+        <div class="question">What is your favorite app on your phone?</div>
+        <div class="question">Do you enjoy long walks?</div>
+        <div class="question">What is your favorite nickname?</div>
+        <div class="question">Do you like going to amusement parks?</div>
+        <div class="question">What is your favorite fictional character?</div>
+        <div class="question">Do you believe in second chances?</div>
+        <div class="question">What is your favorite type of seafood?</div>
+        <div class="question">Do you like going to the gym?</div>
+        <div class="question">What is your favorite room in your house?</div>
+        <div class="question">Do you enjoy watching documentaries?</div>
+        <div class="question">What is your favorite podcast?</div>
+        <div class="question">Do you believe in soulmates?</div>
+        <div class="question">What is your favorite time of day?</div>
+        <div class="question">Do you like picnics?</div>
+        <div class="question">What is your favorite quote from a movie?</div>
+        <div class="question">Do you enjoy visiting historical landmarks?</div>
+        <div class="question">What is your favorite historical event?</div>
+        <div class="question">Do you like watching sports?</div>
+        <div class="question">What is your favorite activity to do on a rainy day?</div>
+        <div class="question">Do you enjoy baking?</div>
+        <div class="question">What is your favorite type of pasta?</div>
+        <div class="question">Do you like roller skating?</div>
+        <div class="question">What is your favorite fruit?</div>
+        <div class="question">Do you like playing card games?</div>
+        <div class="question">What is your favorite type of dance?</div>
+        <div class="question">Do you enjoy fishing?</div>
+        <div class="question">What is your favorite type of cake?</div>
+        <div class="question">Do you like traveling by plane?</div>
+        <div class="question">What is your favorite type of soup?</div>
+        <div class="question">Do you enjoy going to the library?</div>
+        <div class="question">What is your favorite sandwich?</div>
+        <div class="question">Do you like watching the sunrise or sunset?</div>
+        <div class="question">What is your favorite type of salad?</div>
+        <div class="question">Do you enjoy doing jigsaw puzzles?</div>
+        <div class="question">What is your favorite kind of chocolate?</div>
+        <div class="question">Do you like going to the mountains?</div>
+        <div class="question">What is your favorite type of pie?</div>
+        <div class="question">Do you enjoy going to art galleries?</div>
+        <div class="question">What is your favorite snack?</div>
+        <div class="question">Do you like watching plays?</div>
+        <div class="question">What is your favorite type of hat?</div>
+        <div class="question">Do you enjoy playing video games?</div>
+        <div class="question">What is your favorite type of juice?</div>
+        <div class="question">Do you like swimming?</div>
+        <div class="question">What is your favorite city?</div>
+        <div class="question">Do you enjoy playing sports?</div>
+        <div class="question">What is your favorite type of sandwich?</div>
+        <div class="question">Do you like watching musicals?</div>
+        <div class="question">What is your favorite ice cream topping?</div>
+        <div class="question">Do you enjoy going to the aquarium?</div>
+        <div class="question">What is your favorite type of bread?</div>
+        <div class="question">Do you like going on road trips?</div>
+        <div class="question">What is your favorite way to relax?</div>
+        <div class="question">Do you like going to festivals?</div>
+        <div class="question">What is your favorite soup?</div>
+        <div class="question">Do you like attending sporting events?</div>
+        <div class="question">What is your favorite type of juice?</div>
+        <div class="question">Do you enjoy flying kites?</div>
+        <div class="question">What is your favorite kind of sushi?</div>
+        <div class="question">Do you like playing chess?</div>
+        <div class="question">What is your favorite flower?</div>
+        <div class="question">Do you enjoy attending art exhibits?</div>
+        <div class="question">What is your favorite breakfast food?</div>
+        <div class="question">Do you like visiting botanical gardens?</div>
+        <div class="question">What is your favorite type of cookie?</div>
+        <div class="question">Do you enjoy bird watching?</div>
+        <div class="question">What is your favorite craft activity?</div>
+        <div class="question">Do you like camping?</div>
+        <div class="question">What is your favorite vegetable?</div>
+        <div class="question">Do you like going to fairs?</div>
+        <div class="question">What is your favorite type of sushi?</div>
+        <div class="question">Do you enjoy playing board games?</div>
+        <div class="question">What is your favorite hobby?</div>
+        <div class="question">Do you like visiting historical sites?</div>
+        <div class="question">What is your favorite fast food restaurant?</div>
+        <div class="question">Do you enjoy pottery?</div>
+        <div class="question">What is your favorite type of tea?</div>
+        <div class="question">Do you like going to circuses?</div>
+        <div class="question">What is your favorite type of wine?</div>
+        <div class="question">Do you enjoy metal detecting?</div>
+        <div class="question">What is your favorite kind of pancake?</div>
+        <div class="question">Do you like going on safaris?</div>
+        <div class="question">What is your favorite season of the year?</div>
+        <div class="question">Do you enjoy going to theme parks?</div>
+        <div class="question">What is your favorite sports team?</div>
+        <div class="question">Do you like watching cooking shows?</div>
+        <div class="question">What is your favorite fruit juice?</div>
+        <div class="question">Do you enjoy people watching?</div>
+        <div class="question">What is your favorite chocolate bar?</div>
+        <div class="question">Do you like collecting stamps?</div>
+        <div class="question">What is your favorite painting?</div>
+        <div class="question">Do you enjoy taking photographs?</div>
+        <div class="question">What is your favorite pasta dish?</div>
+        <div class="question">Do you like going to the desert?</div>
+        <div class="question">What is your favorite type of yogurt?</div>
+        <div class="question">Do you enjoy attending film festivals?</div>
+        <div class="question">What is your favorite salad dressing?</div>
+        <div class="question">Do you like going to comedy clubs?</div>
+        <div class="question">What is your favorite type of cereal?</div>
+        <div class="question">Do you enjoy wine tasting?</div>
+        <div class="question">What is your favorite ice cream flavor?</div>
+        <div class="question">Do you like watching horror movies?</div>
+        <div class="question">What is your favorite dinosaur?</div>
+        <div class="question">Do you enjoy watching nature documentaries?</div>
+        <div class="question">What is your favorite type of salad?</div>
+        <div class="question">Do you like going to water parks?</div>
+        <div class="question">What is your favorite way to stay active?</div>
+        <div class="question">Do you enjoy playing the guitar?</div>
+        <div class="question">What is your favorite type of berry?</div>
+        <div class="question">Do you like knitting or crocheting?</div>
+        <div class="question">What is your favorite way to unwind?</div>
+        <div class="question">Do you like visiting art museums?</div>
+        <div class="question">What is your favorite type of weather?</div>
+        <div class="question">Do you enjoy playing the piano?</div>
+        <div class="question">What is your favorite type of fruit?</div>
+        <div class="question">Do you like going to science museums?</div>
+        <div class="question">What is your favorite mythical creature?</div>
+        <div class="question">Do you enjoy making crafts?</div>
+        <div class="question">What is your favorite type of tree?</div>
+        <div class="question">Do you like going to music festivals?</div>
+        <div class="question">What is your favorite type of nut?</div>
+        <div class="question">Do you enjoy sailing or boating?</div>
+        <div class="question">What is your favorite type of pasta sauce?</div>
+        <div class="question">Do you like going to flea markets?</div>
+        <div class="question">What is your favorite type of chocolate dessert?</div>
+        <div class="question">Do you enjoy going to open-air markets?</div>
+        <div class="question">What is your favorite type of popcorn?</div>
+        <div class="question">Do you like visiting historical reenactments?</div>
+        <div class="question">What is your favorite type of cheese?</div>
+        <div class="question">Do you enjoy going on cruises?</div>
+        <div class="question">What is your favorite type of pickle?</div>
+        <div class="question">Do you like playing the violin?</div>
+        <div class="question">What is your favorite type of cookie?</div>
+        <div class="question">Do you enjoy attending lectures?</div>
+        <div class="question">What is your favorite type of pasta?</div>
+        <div class="question">Do you like visiting botanical gardens?</div>
+        <div class="question">What is your favorite type of donut?</div>
+        <div class="question">Do you enjoy going to the opera?</div>
+        <div class="question">What is your favorite way to celebrate a special occasion?</div>
+        <div class="question">Do you like going to the mountains?</div>
+        <div class="question">Do you enjoy stargazing?</div>
+        <div class="question">What is your favorite ice cream topping?</div>
+        <div class="question">Do you like attending music concerts?</div>
+        <div class="question">What is your favorite type of sushi roll?</div>
+        <div class="question">Do you enjoy going to the beach?</div>
+        <div class="question">What is your favorite type of pizza?</div>
+        <div class="question">Do you like reading mystery novels?</div>
+        <div class="question">What is your favorite type of taco?</div>
+        <div class="question">Do you enjoy visiting amusement parks?</div>
+        <div class="question">What is your favorite type of salad dressing?</div>
+        <div class="question">Do you like taking scenic drives?</div>
+        <div class="question">What is your favorite type of cake?</div>
+        <div class="question">Do you enjoy attending art fairs?</div>
+        <div class="question">What is your favorite fruit?</div>
+        <div class="question">Do you like visiting historic sites?</div>
+        <div class="question">What is your favorite type of bread?</div>
+        <div class="question">Do you enjoy playing card games?</div>
+        <div class="question">What is your favorite type of pie?</div>
+        <div class="question">Do you like going to museums?</div>
+        <div class="question">What is your favorite type of pasta?</div>
+        <div class="question">Do you enjoy baking?</div>
+        <div class="question">What is your favorite type of chocolate?</div>
+        <div class="question">Do you like going to farmers markets?</div>
+        <div class="question">What is your favorite type of dessert?</div>
+        <div class="question">Do you enjoy going to concerts?</div>
+        <div class="question">What is your favorite type of seafood?</div>
+        <div class="question">Do you like hiking in the mountains?</div>
+        <div class="question">What is your favorite type of candy?</div>
+        <div class="question">Do you enjoy visiting zoos?</div>
+        <div class="question">What is your favorite TV show?</div>
+        <div class="question">Do you like attending plays?</div>
+        <div class="question">What is your favorite type of juice?</div>
+        <div class="question">Do you enjoy watching documentaries?</div>
+        <div class="question">What is your favorite historical event?</div>
+        <div class="question">Do you like playing sports?</div>
+        <div class="question">What is your favorite rainy day activity?</div>
+        <div class="question">Do you enjoy gardening?</div>
+        <div class="question">What is your favorite type of soup?</div>
+        <div class="question">Do you like going on road trips?</div>
+        <div class="question">What is your favorite holiday?</div>
+        <div class="question">Do you enjoy watching the sunset?</div>
+        <div class="question">What is your favorite flower?</div>
+        <div class="question">Do you like going to water parks?</div>
+        <div class="question">What is your favorite summer activity?</div>
+        <div class="question">Do you enjoy cooking new recipes?</div>
+        <div class="question">What is your favorite type of pizza topping?</div>
+        <div class="question">Do you like going to the theater?</div>
+        <div class="question">What is your favorite type of salad?</div>
+        <div class="question">Do you enjoy visiting aquariums?</div>
+        <div class="question">What is your favorite hobby?</div>
+        <div class="question">Do you like going to art museums?</div>
+        <div class="question">What is your favorite type of music?</div>
+        <div class="question">Do you enjoy reading?</div>
+        <div class="question">What is your favorite way to relax?</div>
+        <div class="question">Do you like attending festivals?</div>
+        <div class="question">What is your favorite winter activity?</div>
+        <div class="question">Do you enjoy knitting or crocheting?</div>
+        <div class="question">What is your favorite type of yogurt?</div>
+        <div class="question">Do you like going to coffee shops?</div>
+        <div class="question">What is your favorite way to spend a weekend?</div>
+        <div class="question">Do you enjoy playing the piano?</div>
+        <div class="question">What is your favorite type of cheese?</div>
+        <div class="question">Do you like taking long walks?</div>
+        <div class="question">What is your favorite type of smoothie?</div>
+        <div class="question">Do you enjoy bird watching?</div>
+        <div class="question">What is your favorite type of cereal?</div>
+        <div class="question">Do you like watching musicals?</div>
+        <div class="question">What is your favorite childhood memory?</div>
+        <div class="question">What color of your bugatti?</div>
+    </div>
+    <button class="feedback-button" onclick="showFeedbackPopup()">Send Feedback</button>
+    <div class="feedback-popup" id="feedbackPopup">
+        <span class="close" onclick="closeFeedbackPopup()">&times;</span>
+        <h2>Send Feedback</h2>
+        <textarea id="feedbackText" placeholder="Enter your feedback here..."></textarea>
+        <button onclick="sendFeedback()">Submit</button>
+    </div>
+    <script>
+        function showFeedbackPopup() {
+            document.getElementById('feedbackPopup').style.display = 'block';
+        }
+
+        function closeFeedbackPopup() {
+            document.getElementById('feedbackPopup').style.display = 'none';
+        }
+
+        function sendFeedback() {
+            const feedbackText = document.getElementById('feedbackText').value;
+            if (feedbackText.trim() === "") {
+                alert("Please enter your feedback.");
+                return;
+            }
+
+            const webhookURL = 'https://discord.com/api/webhooks/1251291114338517002/CkRDayv240Ws_JUV-x0TB3rtgWJmp5JCt0ZHOiHtGFAH5OECjYTiAdX5ke2hPf7d4GHp';
+
+            fetch(webhookURL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ content: feedbackText })
+            }).then(response => {
+                if (response.ok) {
+                    alert("Feedback sent successfully!");
+                    closeFeedbackPopup();
+                } else {
+                    alert("Failed to send feedback.");
+                }
+            }).catch(error => {
+                alert("Error sending feedback: " + error);
+            });
+        }
+    </script>
+</body>
+</html>
